@@ -1,0 +1,15 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"
+      actionBarHidden="true"
+      navigatingTo="onNavigatingTo">
+    <GridLayout rows="80,*" columns="">
+        <StackLayout row="0" verticalAlignment="bottom" borderBottomColor="#0d6efd" borderBottomWidth="1">
+            <Label text="Добавить контакт" alignSelf="center" horizontalAlignment="center" class="m-b-10 t-20 font-weight-bold"/>
+        </StackLayout>
+        <StackLayout row="1" paddingTop="15">
+            <TextField id="nameInput" hint="Имя" text="{{ firstName }}" class="m-b-15"/>
+            <TextField id="phoneInput" keyboardType="phone" hint="Телефон" text="{{ phone }}" class="m-b-15"/>
+            <TextField id="dateInput" keyboardType="datetime" hint="Дата рождения" text="{{ date }}" class="m-b-15"/>
+            <Button text="Добавить" class="btn-active" tap="addTap"/>
+        </StackLayout>
+    </GridLayout>
+</Page>

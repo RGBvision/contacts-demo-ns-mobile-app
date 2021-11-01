@@ -1,0 +1,27 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"
+      xmlns:PullRefresh="@nstudio/nativescript-pulltorefresh"
+      xmlns:FAB="@nstudio/nativescript-floatingactionbutton"
+      actionBarHidden="true"
+      navigatingTo="onNavigatingTo">
+    <GridLayout rows="80,*" columns="">
+        <StackLayout row="0" verticalAlignment="bottom" borderBottomColor="#0d6efd" borderBottomWidth="1">
+            <Label text="Контакты" alignSelf="center" horizontalAlignment="center" class="m-b-10 t-20 font-weight-bold"/>
+        </StackLayout>
+        <PullRefresh:PullToRefresh row="1" refresh="refreshList" indicatorColor="#0d6efd">
+            <ListView items="{{ contactList }}" itemTap="itemTap">
+                <ListView.itemTemplate>
+                    <StackLayout class="list-group-item">
+                        <Label text="{{ $value[0] }}" textWrap="true" class="t-16 m-b-0 p-b-0"/>
+                        <Label text="{{ $value[1] }}" textWrap="true" class="t-12 m-b-0 p-t-0 p-b-0"/>
+                        <Label text="{{ $value[2] }}" textWrap="true" class="t-12 p-t-0"/>
+                    </StackLayout>
+                </ListView.itemTemplate>
+            </ListView>
+        </PullRefresh:PullToRefresh>
+        <FAB:fab tap="fabTap"
+                 row="1"
+                 text="&#xF0014;"
+                 rippleColor="#f1f1f1"
+                 class="fab-button mdi"/>
+    </GridLayout>
+</Page>

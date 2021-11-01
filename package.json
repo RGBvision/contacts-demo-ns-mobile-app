@@ -1,0 +1,42 @@
+{
+  "name": "pro.rgbvision.contact",
+  "main": "app/app.js",
+  "version": "8.0.4",
+  "author": "Alex Graham <rgbvision.net@gmail.com>",
+  "description": "NativeScript Demo Application",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "app",
+    "App_Resources",
+    "hooks",
+    "tools",
+    "!tools/assets",
+    ".editorconfig",
+    "jsconfig.json"
+  ],
+  "keywords": [
+    "demo",
+    "nativescript",
+    "mobile",
+    "{N}"
+  ],
+  "homepage": "",
+  "dependencies": {
+    "@nativescript-community/https": "^3.2.0",
+    "@nativescript/core": "^8.0.3",
+    "@nativescript/theme": "^3.0.2",
+    "@nstudio/nativescript-floatingactionbutton": "^3.0.4",
+    "@nstudio/nativescript-pulltorefresh": "^3.0.2",
+    "moment": "^2.29.1",
+    "nativescript-phone": "^3.0.2"
+  },
+  "devDependencies": {
+    "@nativescript/android": "~8.1.1",
+    "@nativescript/webpack": "^5.0.0"
+  },
+  "private": false,
+  "readme": "NativeScript Application"
+}

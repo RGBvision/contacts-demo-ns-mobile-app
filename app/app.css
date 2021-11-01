@@ -1,0 +1,36 @@
+﻿@import '@nativescript/theme/css/core.css';
+@import '@nativescript/theme/css/default.css';
+
+.mdi {
+    font-family: "Material Design Icons", "materialdesignicons-webfont";
+}
+
+.btn-active {
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+.btn-active:active{
+    background-color: #0d6efd;
+    color: #eee;
+}
+
+.ns-dark .btn-active {
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+.ns-dark .btn-active:active{
+    background-color: #0d6efd;
+    color: #eee;
+}
+
+.fab-button {
+    height: 64;
+    width: 64;
+    margin: 15;
+    background-color: #0d6efd;
+    color: #fff;
+    horizontal-align: right;
+    vertical-align: bottom;
+}
